@@ -1,4 +1,3 @@
-site_url: https://usuario.github.io/repositorio
 backend:
   name: git-gateway
   branch: main
@@ -7,25 +6,12 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "homenaje"
+  - name: "pagina"
     label: "Página Homenaje"
     files:
       - file: "data/homenaje.yml"
-        label: "Contenido del Homenaje"
-        name: "contenido"
+        label: "Contenido Principal"
+        name: "homenaje"
         fields:
           - { label: "Nombre", name: "nombre", widget: "string" }
-          - { label: "Fechas", name: "fechas", widget: "string" }
-          - { label: "Frase Conmemorativa", name: "frase", widget: "text" }
-          - { label: "Imagen de Portada", name: "imagen_portada", widget: "image" }
-          - { label: "Imagen Principal", name: "imagen_principal", widget: "image" }
-          - label: "Videos"
-            name: "videos"
-            widget: "list"
-            field: { label: "URL del video de YouTube", name: "video", widget: "string" }
-          - label: "Galería"
-            name: "galeria"
-            widget: "list"
-            fields:
-              - { label: "Imagen", name: "imagen", widget: "image" }
-              - { label: "Descripción", name: "descripcion", widget: "string" }
+          - { label: "Frase", name: "frase", widget: "text" }
