@@ -1,21 +1,19 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: juliosilvar/jjuliosilvar-homenaje
   branch: main
+  auth_type: oauth
+  app_id: Ov23li9kGADtJ9lldduL
 
-media_folder: "images"
-public_folder: "/images"
+media_folder: "static/img"
+public_folder: "/img"
 
 collections:
   - name: "pagina"
     label: "Página Homenaje"
-    files:
-      - file: "data/homenaje.yml"
-<<<<<<< HEAD
-        label: "Contenido"
-=======
-        label: "Contenido Principal"
->>>>>>> 97473b691666b45c7f37867b506daa2934341a37
-        name: "homenaje"
-        fields:
-          - { label: "Nombre", name: "nombre", widget: "string" }
-          - { label: "Frase", name: "frase", widget: "text" }
+    folder: "content/pagina"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Contenido", name: "body", widget: "markdown" }
