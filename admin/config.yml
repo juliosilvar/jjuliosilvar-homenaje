@@ -10,7 +10,11 @@ collections:
     label: "Página Homenaje"
     files:
       - file: "data/homenaje.yml"
+<<<<<<< HEAD
         label: "Contenido"
+=======
+        label: "Contenido Principal"
+>>>>>>> 97473b691666b45c7f37867b506daa2934341a37
         name: "homenaje"
         fields:
           - { label: "Nombre", name: "nombre", widget: "string" }
